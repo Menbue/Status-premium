@@ -1,0 +1,53 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #121920;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.all__form {
+    padding: 39px 26px 64px;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.all__button {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #F8BE4D;
+    border-radius: 5px;
+    padding: 20px 23px 19px;
+    cursor: pointer;
+}

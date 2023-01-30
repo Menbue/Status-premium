@@ -1,0 +1,53 @@
+@import "fonts";
+@import "body";
+@import "header";
+@import "footer";
+@import "blocks/promo";
+@import "blocks/service";
+@import "blocks/privilege";
+@import "blocks/support";
+@import "blocks/how";
+
+/*МЕДИА****************************************************
+**********************************************************/
+
+
+@media (max-width: 1080px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    label {
+        width: 100%;
+    }
+
+    .service__title,
+    .privilege__title,
+    .privilege__subtitle,
+    .support__title,
+    .how__title {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .all__form {
+        max-width: 100%;
+        padding: 39px 0 64px;
+    }
+
+    .all__button {
+        max-width: 278px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+ 
+}

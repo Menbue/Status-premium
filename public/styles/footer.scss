@@ -1,0 +1,31 @@
+.footer__container {
+    opacity: 0.35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0 34px;
+}
+
+.footer__container .header__mobile path {
+    fill: #61666B;
+}
+
+
+/*МЕДИА****************************************************
+**********************************************************/
+
+@media (max-width: 575.98px) {
+    .footer__container {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer__container .header__mobile {
+        display: block;
+        align-self: start;
+    }
+
+    .footer__container .header__logo {
+        width: 50%;
+    }
+}

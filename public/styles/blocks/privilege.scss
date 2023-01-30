@@ -1,0 +1,117 @@
+.privilege__container {
+    max-width: 870px;
+}
+
+.privilege__title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.privilege__flexblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.privilege__content__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 14px;
+    color: #F8BE4D;
+    margin-bottom: 50px;
+}
+
+.privilege__content__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #88939E;
+}
+
+.privilege__content__text b {
+    color: #ffffff;
+}
+
+.privilege__subtitle {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+/*ПРИВИЛЕГИИ - ФОРМА*************************************/
+
+.privilege__form {
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
+    border: none;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 170px;
+}
+
+.privilege__input__block {
+    width: 240px;
+    color: #88939E;
+    font-weight: 400;
+    font-size: 15px 14px 15px 34px;
+    line-height: 18px;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3A434C;
+}
+
+.privilege__content__btn {
+    width: 274px;
+    padding: 14px 35px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    transition: all .3s ease-out;
+
+}
+
+.privilege__content__btn:hover {
+    color: #F8BE4D;
+    background: transparent;
+    box-shadow: 0 0 10px 0 #F8BE4D inset, 0 0 10px 4px #F8BE4D;
+}
+
+
+/*МЕДИА****************************************************
+**********************************************************/
+
+@media (max-width: 991.98px) {
+    .privilege__form {
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    .privilege__input__block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+.privilege__flexblock {
+    flex-direction: column;
+}
+
+.privilege__content__title,
+.privilege__content__text {
+    margin-bottom: 20px;
+}
+
+.privilege__form {
+    margin-bottom: 0;
+}
+}
