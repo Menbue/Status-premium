@@ -1,0 +1,54 @@
+.modal__promo__form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(63, 62, 62, .8);
+    z-index: 1000;
+   
+}
+
+.hidden{
+    display: none;
+}
+
+.modal__window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100px;
+    min-width: 500px;
+    background-color: #121920;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal__window__title {
+    margin-bottom: 20px;
+}
+
+.modal__window p {
+    color: #88939E;
+    margin-bottom: 20px;
+}
+
+.modal__window__btn{
+    background-color: #F8BE4D;
+    color: #121920;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .3s linear;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #F8BE4D;
+    cursor: pointer;
+
+
+    &:hover{
+        background-color: transparent;
+        color: #F8BE4D;
+    }
+}

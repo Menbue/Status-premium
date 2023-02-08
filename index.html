@@ -53,7 +53,7 @@
                                 Premium</b></li>
                     </ul>
                 </div>
-                <div class="promo__form">
+                <div class="promo__form" id="promo-form">
                     <p class="promo__form__title">Перезвоним в течение 5 минут</p>
                     <form class="all__form" action="">
                         <label for="">
@@ -64,7 +64,7 @@
                             <input class="promo__input__block" type="number" name="number__phone"
                                 placeholder="Ваш телефон*">
                         </label>
-                        <button class="promo__form__btn all__button">Заказать звонок</button>
+                        <button class="promo__form__btn all__button"  id="promo-btn">Заказать звонок</button>
                     </form>
                 </div>
             </div>
@@ -465,7 +465,7 @@
                                     <input class="promo__input__block" type="number" name="number__phone"
                                         placeholder="Ваш телефон*">
                                 </label>
-                                <button class="promo__form__btn all__button">Заказать звонок</button>
+                                <button class="promo__form__btn all__button" id="promo-btn">Заказать звонок</button>
                             </form>
                         </div>
                     </div>
@@ -486,6 +486,16 @@
             </div>
         </footer>
 
+    </div>
+    
+    <div class="modal__promo__form hidden" id="modal__promo">
+        <div class="modal__window">
+            <div class="modal__window__title">
+                Ошибка!
+            </div>
+            <p>Данные введены неверно.</p>
+            <button class="modal__window__btn" id="modal-btn-close">Закрыть окно</button>
+        </div>
     </div>
 
     <script src="/main.js"></script>
