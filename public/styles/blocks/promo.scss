@@ -24,10 +24,10 @@
     margin-bottom: 13px;
     font-style: normal;
     margin-top: 80px;
-}
 
-.promo__content__title b {
-    color: #F8BE4D;
+    & b {
+        color: #F8BE4D;
+    }
 }
 
 .promo__content__subtitle {
@@ -38,40 +38,39 @@
     margin-bottom: 46px;
 }
 
-
 .promo__content__btn {
     margin-bottom: 31px;
-    transition: .5s ease-in-out;
-}
+    transition: .4s ease-in-out;
 
-.promo__content__btn:hover {
-    transform: scale(1.03);
-    background-color: #F8BE4D;
-    color: #121920;
+    &:hover {
+        transform: scale(1.03);
+        background-color: #F8BE4D;
+        color: #121920;
+    }
 }
 
 .promo__content__text {
     margin: 0;
     color: #88939E;
     list-style-type: none;
-}
 
-.promo__content__text li {
-    position: relative;
-}
+    & li {
+        position: relative;
 
-.promo__content__text li::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 1px;
-    left: -40px;
-    background-color: #F8BE4D;
-    top: 10px;
-}
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 1px;
+            left: -40px;
+            background-color: #F8BE4D;
+            top: 10px;
+        }
+    }
 
-.promo__content__text b {
-    color: #ffffff;
+    & b {
+        color: #ffffff;
+    }
 }
 
 /*ПРОМО-ФОРМА*****************************************/
@@ -81,7 +80,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-
 }
 
 .promo__form {
@@ -103,15 +101,14 @@
     width: 240px;
     color: #88939E;
     border: none;
+
+    &:first-child {
+        margin-bottom: 18px;
+    }
 }
 
 input::placeholder {
     color: #88939E;
-}
-
-
-.promo__input__block:first-child {
-    margin-bottom: 18px;
 }
 
 input::-webkit-outer-spin-button,
@@ -127,14 +124,13 @@ input::-webkit-inner-spin-button {
     color: #121920;
     background-color: #F8BE4D;
     transition: all .2s linear;
-}
 
-.promo__form__btn:hover {
-    color: #F8BE4D;
-    background: transparent;
-    box-shadow: 0 0 10px 0 #F8BE4D inset, 0 0 10px 4px #F8BE4D;
+    &:hover {
+        color: #F8BE4D;
+        background: transparent;
+        box-shadow: 0 0 10px 0 #F8BE4D inset, 0 0 10px 4px #F8BE4D;
+    }
 }
-
 
 /*МЕДИА****************************************************
 **********************************************************/
@@ -144,7 +140,7 @@ input::-webkit-inner-spin-button {
         align-content: center;
         flex-wrap: wrap;
     }
-    
+
     .promo {
         background-position: 55%;
     }

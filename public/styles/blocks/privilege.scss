@@ -30,10 +30,10 @@
     font-size: 24px;
     line-height: 30px;
     color: #88939E;
-}
 
-.privilege__content__text b {
-    color: #ffffff;
+    & b {
+        color: #ffffff;
+    }
 }
 
 .privilege__subtitle {
@@ -77,14 +77,12 @@
     line-height: 20px;
     transition: all .3s ease-out;
 
+    &:hover {
+        color: #F8BE4D;
+        background: transparent;
+        box-shadow: 0 0 10px 0 #F8BE4D inset, 0 0 10px 4px #F8BE4D;
+    }
 }
-
-.privilege__content__btn:hover {
-    color: #F8BE4D;
-    background: transparent;
-    box-shadow: 0 0 10px 0 #F8BE4D inset, 0 0 10px 4px #F8BE4D;
-}
-
 
 /*МЕДИА****************************************************
 **********************************************************/
@@ -102,16 +100,16 @@
 }
 
 @media (max-width: 767.98px) {
-.privilege__flexblock {
-    flex-direction: column;
-}
+    .privilege__flexblock {
+        flex-direction: column;
+    }
 
-.privilege__content__title,
-.privilege__content__text {
-    margin-bottom: 20px;
-}
+    .privilege__content__title,
+    .privilege__content__text {
+        margin-bottom: 20px;
+    }
 
-.privilege__form {
-    margin-bottom: 0;
-}
+    .privilege__form {
+        margin-bottom: 0;
+    }
 }

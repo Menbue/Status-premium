@@ -6,7 +6,6 @@
     left: 0;
     background: rgb(63, 62, 62, .8);
     z-index: 1000;
-   
 }
 
 .hidden{
@@ -19,18 +18,18 @@
     top: 50%;
     transform: translate(-50%, -50%);
     min-height: 100px;
-    min-width: 500px;
+    min-width: 300px;
     background-color: #121920;
     padding: 20px;
     border-radius: 10px;
+
+    & p {
+        color: #88939E;
+        margin-bottom: 20px;
+    }
 }
 
 .modal__window__title {
-    margin-bottom: 20px;
-}
-
-.modal__window p {
-    color: #88939E;
     margin-bottom: 20px;
 }
 
@@ -45,7 +44,6 @@
     font-weight: 700;
     border: 1px solid #F8BE4D;
     cursor: pointer;
-
 
     &:hover{
         background-color: transparent;

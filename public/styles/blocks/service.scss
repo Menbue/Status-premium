@@ -42,7 +42,7 @@
 .service__column,
 .service__column svg path,
 .service__column__text {
-    transition: .3s linear;
+    transition: all .4s ease-out;
 }
 
 .service__column:hover,
@@ -50,10 +50,11 @@
     fill: #121920;
     background: #F8BE4D;
     color: #121920;
-}
 
-.service__column:hover .service__column__text {
-    color: #121920;
+    &:hover .service__column__text {
+        color: #121920;
+    }
+    
 }
 
 /*МЕДИА****************************************************

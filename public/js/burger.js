@@ -1,8 +1,22 @@
-// console.log('heool');
+// БУРГЕР **********************************************************************
 
-// document.querrySelector('data-scroll').on( 'click', function(event) {
-//     event.preventDefault();
+const btnBurger = document.querySelector('#burger');
+const body = document.querySelector('.body');
+btnBurger.addEventListener('click', function () {
+    body.classList.toggle('menu-open');
+});
 
-//     let elemetId = this.data('scroll')
-//     console.log(elemetId);
-// })
+// НАВИГАЦИЯ**********************************************************************
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        const id = smoothLink.getAttribute('href');
+        body.classList.remove('menu-open')
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
