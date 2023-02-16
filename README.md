@@ -1,5 +1,5 @@
 # Status Premium
-
+ Сборщик Vite. Команда для просмотра с локального сервера - yarn preview
 
 
 ## Getting started
