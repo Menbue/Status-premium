@@ -14,6 +14,14 @@
     padding: 38px 0 77px;
 }
 
+.header__logo svg path {
+    transition: all .4s linear;
+}
+
+.header__logo:hover svg path {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
 .header__mobile {
     color: #ffffff;
     font-weight: 200;
@@ -21,11 +29,24 @@
     line-height: 26px;
     text-decoration: none;
     position: relative;
+    transition: all .4s linear;
 
     & svg {
         position: absolute;
         left: -24px;
         top: 3px;
+
+        & path {
+            transition: all .4s linear;
+        }
+    }
+}
+
+.header__mobile:hover {
+    color: rgba(255, 255, 255, .8);
+
+    & svg path {
+        fill: rgba(255, 255, 255, .8);
     }
 }
 
@@ -65,7 +86,7 @@
     }
 
     .header__container {
-       padding: 10px;
+        padding: 10px;
     }
 
     .burger {
